@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mehdi</title>
+    <style>
+        *{
+            padding: 0;margin: 0;box-sizing: border-box;
+        }
+        body{
+            background-color: wheat;
+        }
+        .box{
+            width: 100%;
+            height: 100vh;
+            border: 20px solid black;
+            background-image:url(1.jpg) ;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: cover;
+        }
+        .menu{
+            /* background: #2a28283f; */
+            /* border: 2px solid green; */
+            width: 400px;
+            height: 100vh;
+            margin:100px auto; 
+            display: flex;       
+            align-items: flex-start;
+            
+            
+            >ul{
+                min-height: 100px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                
+                
+                >li{
+                    width: 100%; 
+                    /* padding: 0 10px; */
+                    min-height: 40px;
+                    list-style-type: none;
+                    border: 2px solid rgb(72, 8, 8);
+                    display: flex;
+                    flex-wrap: wrap;
+                   transition: 1s;
+                    background: #464f4673;
+                    border-radius: 80%;
+                    &:hover{
+                        >ul{
+                               
+                            height: 160px;
+                        }
+                    }
+                    >a{
+                        text-decoration: none;
+                        font-size: 30px;
+                        color: rgb(64, 7, 7);
+                        width: 100%;
+                        height: 50px;
+                        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                        font-size: 20px;
+                        text-transform: uppercase;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 80%;
+                        &:hover{
+                            /* background-color: rgb(255, 68, 0); */
+                            color: rgb(94, 23, 23);
+                            border-radius: 80%;
+                        }
+                    }
+                   
+                    >ul{
+                        background: rgba(241, 214, 214, 0.439);
+                        border-radius: 80%;
+                        width: 100%;
+                        height: 0;
+                        overflow: hidden;
+                        transition: 1s;
+                        >li{
+                            list-style-type: none;
+                            height: 40px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 100%;
+                            color: rgb(53, 50, 49);
+                            font-size: 20px;
+                            font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+                            /* border: 2px solid black; */
+                        }
+                    }
+                    
+                }
+            }    
+        }
+
+
+    </style>
+</head>
+<body>
+<div class="box">
+    <nav class="menu">
+        <ul>
+           <li><a href="">1th</a>
+            <ul>
+                <li>11th</li>
+                <li>12th</li>
+                
+             </ul>
+        </li>
+           <li><a href="">2th</a>
+                  <ul>
+                    <li>21th</li>
+                    <li>22th</li>
+                    <li>23th</li>
+                    <li>24th</li>
+                 </ul>
+           </li>
+           <li><a href="">3th</a>
+                <ul>
+                    <li>31th</li>
+                    <li>32th</li>
+                    <li>33th</li>
+                    <li>34th</li>
+                </ul>
+            </li>
+            <li><a href="">4th</a></li>
+        </ul>
+    </nav>
+</div>
+    
+</body>
+</html>
